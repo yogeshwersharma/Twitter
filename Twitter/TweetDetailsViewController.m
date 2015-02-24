@@ -1,22 +1,22 @@
 //
-//  ViewController.m
+//  TweetDetailsViewController.m
 //  Twitter
 //
-//  Created by Yogi Sharma on 2/17/15.
+//  Created by Yogi Sharma on 2/21/15.
 //  Copyright (c) 2015 Yogi Sharma. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "TweetDetailsViewController.h"
 
-@interface ViewController ()
+@interface TweetDetailsViewController ()
 
 @end
 
-@implementation ViewController
+@implementation TweetDetailsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {

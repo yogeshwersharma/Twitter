@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="150" id="KGk-i7-Jjw" customClass="TweetCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Rq-j7-PbZ">
+                        <rect key="frame" x="8" y="8" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="HgT-fc-cge"/>
+                            <constraint firstAttribute="width" constant="70" id="vCE-XI-eYl"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tweet" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cw7-RZ-IXM">
+                        <rect key="frame" x="86" y="33" width="226" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KV2-eL-oSS">
+                        <rect key="frame" x="86" y="8" width="38" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="2h" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wmn-gJ-rv7">
+                        <rect key="frame" x="297" y="8" width="15" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.58933423910000005" green="0.58933423910000005" blue="0.58933423910000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Handle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvl-BS-BtC">
+                        <rect key="frame" x="132" y="8" width="46" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.58933423913043481" green="0.58933423913043481" blue="0.58933423913043481" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4Rq-j7-PbZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="2Md-6t-aYY"/>
+                    <constraint firstAttribute="trailing" secondItem="cw7-RZ-IXM" secondAttribute="trailing" constant="8" id="3BI-Nd-cSi"/>
+                    <constraint firstItem="KV2-eL-oSS" firstAttribute="top" secondItem="xvl-BS-BtC" secondAttribute="top" id="4EE-mS-Fzc"/>
+                    <constraint firstItem="KV2-eL-oSS" firstAttribute="top" secondItem="wmn-gJ-rv7" secondAttribute="top" id="EQ4-hf-RK5"/>
+                    <constraint firstItem="xvl-BS-BtC" firstAttribute="baseline" secondItem="wmn-gJ-rv7" secondAttribute="baseline" id="I3w-f6-omc"/>
+                    <constraint firstItem="xvl-BS-BtC" firstAttribute="baseline" secondItem="KV2-eL-oSS" secondAttribute="baseline" id="NLL-dL-rJe"/>
+                    <constraint firstItem="KV2-eL-oSS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="NMx-I2-oAh"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="4Rq-j7-PbZ" secondAttribute="bottom" constant="8" id="NxL-eQ-22b"/>
+                    <constraint firstItem="cw7-RZ-IXM" firstAttribute="leading" secondItem="4Rq-j7-PbZ" secondAttribute="trailing" constant="8" id="PpG-i5-z5J"/>
+                    <constraint firstItem="xvl-BS-BtC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Sn7-8e-Su1"/>
+                    <constraint firstItem="wmn-gJ-rv7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xvl-BS-BtC" secondAttribute="trailing" constant="8" id="VrW-Ud-TqM"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="cw7-RZ-IXM" secondAttribute="bottom" constant="8" id="fpV-so-GPW"/>
+                    <constraint firstItem="4Rq-j7-PbZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="gJI-8z-64u"/>
+                    <constraint firstItem="cw7-RZ-IXM" firstAttribute="top" secondItem="KV2-eL-oSS" secondAttribute="bottom" constant="8" id="hb0-nl-hWY"/>
+                    <constraint firstAttribute="trailing" secondItem="wmn-gJ-rv7" secondAttribute="trailing" constant="8" id="ifT-HD-Ui3"/>
+                    <constraint firstItem="xvl-BS-BtC" firstAttribute="leading" secondItem="KV2-eL-oSS" secondAttribute="trailing" constant="8" id="nbZ-un-tCb"/>
+                    <constraint firstItem="wmn-gJ-rv7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="oyb-r5-cKE"/>
+                    <constraint firstItem="KV2-eL-oSS" firstAttribute="leading" secondItem="4Rq-j7-PbZ" secondAttribute="trailing" constant="8" id="qdu-X3-t1l"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLabel" destination="KV2-eL-oSS" id="4Q2-HK-O9R"/>
+                <outlet property="screenNameLabel" destination="xvl-BS-BtC" id="cy5-1A-CWy"/>
+                <outlet property="timeLabel" destination="wmn-gJ-rv7" id="HgN-bH-8Hr"/>
+                <outlet property="tweetLabel" destination="cw7-RZ-IXM" id="Si8-AC-Qtv"/>
+                <outlet property="tweetTextLabel" destination="cw7-RZ-IXM" id="90c-3l-g6P"/>
+                <outlet property="userImage" destination="4Rq-j7-PbZ" id="Xuz-I1-SLy"/>
+            </connections>
+            <point key="canvasLocation" x="254" y="459"/>
+        </tableViewCell>
+    </objects>
+</document>
